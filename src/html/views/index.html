@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <link rel="stylesheet" href="css/style.bundle.css" />
+
+    <title></title>
+  </head>
+
+  <body>
+    <%= _.template(require('./../includes/header.html').default)(data) %>
+    <div class="main">
+      <div class="slider">
+        <div
+          class="slider__item"
+          style="background-image: url(img/slider1.jpg);"
+        >
+          <div class="slider__container">
+            <h2 class="slider__item-title">Скидка 30%</h2>
+            <h3 class="slider__item-short">на отбеливание</h3>
+            <p class="slider__item-text">Rsdsds sdas</p>
+            <a class="slider__request" href="">Заказать звонок</a>
+          </div>
+        </div>
+        <a class="slider__item" style="background-image: url(img/slider2.jpg);">
+          <div class="slider__container">
+            <h2 class="slider__item-title">dfd</h2>
+          </div>
+        </a>
+        <!-- <img src="img/slider2.jpg" alt="" />
+        <img src="img/slider1.jpg" alt="" /> -->
+      </div>
+      <div class="services">
+        <div class="services__container">
+          <h2 class="services__title">НАШИ УСЛУГИ</h2>
+          <span class="services__shorttext">качественные и доступные</span>
+          <div class="services__list">
+            <div class="services__item">
+              <img src="img/s1.png" alt="" />
+              <div class="services__item-text">
+                <p class="services__item-title">Профилактика</p>
+                <ul>
+                  <li>чистка</li>
+                  <li>фоторирование</li>
+                  <li>герметизация</li>
+                </ul>
+              </div>
+            </div>
+            <div class="services__item">
+              <img src="img/s2.png" alt="" />
+              <div class="services__item-text">
+                <p class="services__item-title">Лечение зубов</p>
+                <ul>
+                  <li>лечение кариеса</li>
+                  <li>реставрация</li>
+                  <li>лечение гульпита</li>
+                </ul>
+              </div>
+            </div>
+            <div class="services__item">
+              <img src="img/s3.png" alt="" />
+              <div class="services__item-text">
+                <p class="services__item-title">Протезирование зубов</p>
+                <ul>
+                  <li>коронки</li>
+                  <li>виниры</li>
+                  <li>съемные протезы</li>
+                </ul>
+              </div>
+            </div>
+            <div class="services__item">
+              <img src="img/s4.png" alt="" />
+              <div class="services__item-text">
+                <p class="services__item-title">Удаление зубов</p>
+                <ul>
+                  <li>чистка</li>
+                </ul>
+              </div>
+            </div>
+            <div class="services__item">
+              <img src="img/s5.png" alt="" />
+              <div class="services__item-text">
+                <p class="services__item-title">Имплантация</p>
+                <ul>
+                  <li>Протезирование на имплантах</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="services__bg"></div>
+      </div>
+
+      <div class="advantages__top"></div>
+      <div class="advantages">
+        <div class="advantages__bg"></div>
+        <div class="advantages__container">
+          <h2 class="advantages__title"></h2>
+          <span>почему стоит выбрать нашу компанию</span>
+          <div class="advantages__list">
+            <span class="advantages__icon"></span>
+            <div class="advantages__desc">
+              <p class="advantages__desc-title">
+                Квалифицированные специалисты
+              </p>
+              <p class="advantages__desc-text">
+                квалифицированный специалист: Лицо, прошедшее профессиональное
+                обучение, знание и опыт которого позволяют ему выполнить работу
+                и оценить возможные опасности на базе опыта и знания им
+                соответствующего оборудования.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <%= _.template(require('./../includes/footer.html').default)(data) %>
+    <script src="js/bundle.js"></script>
+  </body>
+</html>
